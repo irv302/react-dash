@@ -1,0 +1,42 @@
+html{
+    background-color: burlywood;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: none
+    "sidebar box1 box2 box3"
+    "sidebar box1 box2 box3"
+    "sidebar main main main"
+    "sidebar main main main";
+}
+
+.dashboard {
+background-color: yellow;
+grid-area: sidebar;
+}
+
+.average {
+background-color: orange;
+grid-area: box1;
+}
+
+.reviews {
+background-color: blue;
+grid-area: box2;
+}
+
+.sentiment{
+background-color: brown;
+grid-area: box3;
+}
+
+.webvisitor{
+background-color: rgb(0, 255, 136);
+grid-area: main;
+}
+
