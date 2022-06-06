@@ -11,7 +11,7 @@ import "./style.css";
 function App() {
   return (
     <div className='container'>
-      <h1>React Static Components</h1>
+      {/* <h1>React Static Components</h1> */}
       <Dashboard />
       <AvRating />
       <Reviews />

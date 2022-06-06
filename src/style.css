@@ -3,40 +3,70 @@ html{
 }
 
 .container{
+    background-color: rgb(182, 182, 182);
     display: grid;
-    height: 500px;
-    width: 500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: none
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
     "sidebar box1 box2 box3"
     "sidebar box1 box2 box3"
     "sidebar main main main"
     "sidebar main main main";
-}
+    
+    position: relative;
+    margin: 10%;
+    height: 75vh;
+} 
 
 .dashboard {
 background-color: yellow;
 grid-area: sidebar;
+box-shadow: 0 2px 4px rgba(0,0,0,10);
+text-align: center;
+
+}
+h2 {
+background: linear-gradient(90deg, rgb(6, 95, 154), rgb(0, 0, 0), rgb(0, 255, 106) );
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+box-shadow: 0 2px 10px rgba(0,0,0,10);
+
+
 }
 
 .average {
 background-color: orange;
 grid-area: box1;
+box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
 .reviews {
-background-color: blue;
+background-color: rgb(124, 124, 206);
 grid-area: box2;
+box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
 .sentiment{
 background-color: brown;
 grid-area: box3;
+box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
 .webvisitor{
 background-color: rgb(0, 255, 136);
 grid-area: main;
+text-align: center;
+box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
+.minibox{
+    background-color:rgb(255, 0, 0);
+    margin: 10%;
+    height: 120px;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,10);
+}
