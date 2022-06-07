@@ -5,6 +5,7 @@ html{
 .container{
     background-color: rgb(182, 182, 182);
     display: grid;
+    
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
@@ -24,28 +25,36 @@ html{
 background-color: yellow;
 grid-area: sidebar;
 box-shadow: 0 2px 4px rgba(0,0,0,10);
-text-align: center;
+text-align: left;
 
 }
 h2 {
-background: linear-gradient(90deg, rgb(6, 95, 154), rgb(0, 0, 0), rgb(0, 255, 106) );
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
-box-shadow: 0 2px 10px rgba(0,0,0,10);
+    
+    background: linear-gradient(90deg, rgb(171, 184, 194), rgb(0, 0, 0), rgb(0, 255, 106) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: 0 2px 10px rgba(0,0,0,10);
 
+
+}
+
+p{
+    /* text-align: center; */
+    position: center;
+    
 
 }
 
 .average {
 background-color: orange;
-grid-area: box1;
+grid-area: box2;
 box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
 .reviews {
 background-color: rgb(124, 124, 206);
-grid-area: box2;
+grid-area: box1;
 box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
@@ -58,15 +67,15 @@ box-shadow: 0 2px 4px rgba(0,0,0,10);
 .webvisitor{
 background-color: rgb(0, 255, 136);
 grid-area: main;
-text-align: center;
+text-align:left;
 box-shadow: 0 2px 4px rgba(0,0,0,10);
 }
 
 .minibox{
-    background-color:rgb(255, 0, 0);
-    margin: 10%;
+    background-color:rgba(75, 4, 114, 0.571);
+    margin: 1%;
     height: 120px;
     text-align: center;
-    border-radius: 100px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,10);
 }

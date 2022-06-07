@@ -13,8 +13,8 @@ function App() {
     <div className='container'>
       {/* <h1>React Static Components</h1> */}
       <Dashboard />
-      <AvRating />
       <Reviews />
+      <AvRating />
       <SentimentAnalysis />
       <Websitevisitors />
 
